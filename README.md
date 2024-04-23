@@ -1,110 +1,701 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">iCreate</h1>                                      
 
-Welcome martinamicaela frutos,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<p align="center">
+<img src="static/images/Responsive devices - Testing.png" width="600" height="100%">
+</p>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+This project utilises a full-stack framework, incorporating Django, Python, JavaScript, HTML, and CSS. My objective is to develop a responsive website that enables users to perform CRUD operations, as well as post, comment, and interact with events by liking or unliking them. 
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+**[Visit my website](https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com/)**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### SUPERUSER CREDENTIALS:  
+- username - heroku_admin 
+- password - 1a2d3m4i5n
+  
+These will be needed to access some features of the site.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+# Overview
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The website targets vulnerable and underserved youth, offering a platform for lifelong skill development similar to Boys and Girls Scouts. My mission is to expand events into an online hub where participants earn badges by mastering skills, fostering interaction, and applying abilities to life challenges. Youth aged 6-18 can transition and grow in a safe space. 
+The age limit of 18 years old aligns with the legal definition of adulthood in the USA, which is why it's applicable for the websites purposes.
 
-To log into the Heroku toolbelt CLI:
+The name iCreate embodies the boundless potential within each individual child to shape their own reality, transcending limitations imposed by environment or resources. It stands as a powerful affirmation of personal empowerment, urging individuals to craft their unique selves without constraints.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+It's important to note that while this project is currently developed solely for educational purposes, it will be further developed for future use by my children and for volunteer work with youth through an established organisation.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+# Table of Contents
 
-------
+1. [UX](#ux)
+    - [User Stories](#user-stories)
 
-## Release History
+2. [Scope](#scope)
+    - [Features](#features)
+    - [Future Features](#future-features)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+3. [Structure](#structure)
 
-**September 20 2023:** Update Python version to 3.9.17.
+4. [Wireframes](#wireframes)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+5. [Database schema](#database-schema)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+6. [Surface](#surface)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+7. [Technologies Used](#technologies-used)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+8. [Testing](#testing)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+9. [Deployment](#deployment)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+10. [Credits](#credits)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#
+# UX
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Applying fundamental UX principles, I initially focused on devising a strategy by identifying the target audience and determining the features that would offer them the most value.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The target audience for 'iCreate Youth' includes:
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Youth aged 6-18 years old, aiming to engage them in constructive and educational activities.
+- Individuals seeking to explore their creativity and develop new skills.
+- Vistors looking for opportunities to participate in events and workshops relevant to their interests.
+- Guardians interested in providing their children with enriching experiences and learning opportunities.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+These users will be looking for:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- An engaging and interactive website tailored to their age group.
+- Opportunities to explore various interests and hobbies through workshops and events.
+- A platform where they can register for events and courses easily.
+- Features to track their progress and achievements, such as earning badges or certificates.
+- A user-friendly interface with intuitive navigation to access content and resources.
+- The ability to post, comment and like events an provide feedback reviews.
+- Functionality to manage their registrations, including canceling or rescheduling participation as needed.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+This website will provide all of these features while ensuring a safe and supportive online environment for youth to 
+learn, explore, and grow. Additionally, it will incorporate CRUD functionality to allow administrators to manage workshops, courses, registrations, and user data effectively.
 
-------
+## User Stories
 
-## FAQ about the uptime script
+**Epic: Admin**
+| ID  | Content                                                                                                                               |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a site Admin I can create, edit and delete events and comments so that I can manage the site content.                              |
+| 2   | As a site Admin I can access the admin panel so that I can manage events and comments.                                                |
+| 3   | As a site Admin I can log out of the admin panel so that I can disconnect from the website.                                           |
+| 4   | As a site Admin I prioritise implementing measures to safeguard youth data and ensure compliance with privacy                         |
+|     | regulations, demonstrating our commitment to protecting user information                                                              |
+| 5   | As a site Admin I prioritise the inclusion of diverse and inclusive content on the website, ensuring that resources,                  |
+|     | events, and services cater to the varied needs and backgrounds of our youth population, promoting accessibility and equity.           |
+| 6   | As a site Admin I seek to establish partnerships with local teachers, therapists, and licensed professionals to expand the range of.  | 
+|     | services and resources available to youth on our platform, enriching the overall wellness experience and promoting collaboration      | 
+|     | within the iCreate hub.                                                                                                               |
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+**Epic: User Interaction**
+| ID  | Content                                                                                                                               |
+| --- |---------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a logged-in User I can attend events so that I can join events easily using a simple button.                                       |
+| 2   | As a logged-in User I can delete attend events so that I can change my mind to attend events easily using a simple button.            |
+| 3   | As a logged-in User I can create reviews on events so that I can leave my feedback.                                                   |
+| 4   | As a logged-in User I can read reviews on events so that I can leave my feedback.                                                     |
+| 5   | As a logged-in User I can update reviews on events so that I can change my feedback.                                                  |
+| 6   | As a logged-in User I can delete reviews on events so that I can remove my feedback.                                                  |
+| 7   | As a logged-in User I can like and unlike events so that I can mark which events I like.                                              |
+| 8   | As a User I can view the number of likes on events so that I can see which events are the most popular.                               |
+| 9   | As a User I can view comments on events so that I can read other users opinions.                                                      |
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+**Epic: User Events**
+| ID  | Content                                                                                                                                               |
+| --- |-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more.      | 
+|     | information.                                                                                                                                          |
+| 2   | As a logged-in User I can post a event so that other users can see them to sign up.                                                                   |
+| 3   | As a User I can delete my events so that I can remove any unwanted events that I have made.                                                           |
+| 4   | As a User I can edit events so that I can update any changes or mistakes to my events.                                                                |
+| 5   | As a logged-in User I can upload an image along with my event so that other users can see an image relating to the event.                             |
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+**Epic: Login/Register**
+| ID  | Content   
+| --- |-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a User I can register for an account so that I can interact with the site content.                                                                 |
+| 2   | As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website.                                             |
+| 3   | As a User I can easily see if I'm logged-in or logged-out so that I can be sure what my status is.                                                    |
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+**Epic: Navigation**
+| ID  | Content   
+| --- |----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | As a young user aged 6-18, I want the navigation of the iCreate platform to be designed with my needs in mind so that I can easily find and access the.  | 
+|     | content I'm interested in.                                                                                                                               |
+| 2   | As a young user aged 6-18, I want the navigation of the iCreate platform to work seamlessly on all devices, including smartphones and tablets, so that I |  
+|     |can access the platform from anywhere.                                                                                                                    |
+| 3   |As a young user aged 6-18, I want the navigation menu of the iCreate platform to be organised into clear categories like Events, About, Resources, Login, | 
+|     |Logout so that I can quickly navigate to the content I want to explore.                                                                                   |
+| 4   | As a young user aged 6-18, I want the navigation of the iCreate platform to use engaging visuals, icons, and colours to make it visually appealing and   | 
+|     | attractive to me.                                                                                                                                        |
+| 5   | As a young user aged 6-18, I want the navigation elements of the iCreate platform to be consistent across different pages so that I can easily understand| 
+|     | and navigate the website.                                                                                                                                |
+| 6   | As a young user aged 6-18, I want the navigation of the iCreate platform to be accessible to users with disabilities, including features like keyboard.  | 
+|     | navigation and screen reader compatibility, so that all users can use the platform effectively.                                                          |
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<p align="center">
+<img src="static/images/Kanban project board-Readme md.png" width="100%" height="100%">
+</p>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### MoSCoW Prioritisation
 
-**Anything more?**
+I broke down my Epics into stories before prioritising and implementing them.
+By following this method, I applied MoSCoW prioritisation and labels to my user stories within the Issues tab.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
+- **Could Have**: has small impact if left out (*20% of stories*)
+- **Won't Have**: not a priority for this iteration
 
----
 
-Happy coding!
+
+#
+# Scope 
+
+## **Features**
+
+### **Home Page**
+
+1. **Navigation Bar**
+   - The navigation bar appears on every page so users can easily navigate through the site.
+   - Navigation bar has links for 'Home', 'About' and 'Login/Register' more links will be shown to logged in users.
+   - If the user is logged in then the left side of the menu shows links for pages that only authorised users can visit. 
+   - The user name will also appear on the bar, indicating which user is logged in.
+   - The navbar is fully responsive, collapsing into a hamburger menu for medium and small screen size.
+
+   <p align="center">
+<img src="static/images/iCreateNavbar.png" width="100%" height="100%">
+</p>
+
+2. **Landing Page - Event Flip Cards**
+   - The landing area showcases interactive flip cards designed for children to rotate 180°. The front side displays event images to capture their interest.
+  
+   <p align="center">
+<img src="static/images/Feature Flip Cards Front-Event.png" width="100%" height="100%">
+</p>
+
+- Upon flipping, they unveil event details on the reverse side, succinctly showcasing the event's specific information such as time, date, location, and a brief description. This effectively communicates the website's purpose and the specific event offerings. Additionally, each card includes a 'View Details' button for further inquiry.
+
+<p align="center">
+<img src="static/images/Feature Flip Cards Back-Event.png" width="100%" height="100%">
+</p>
+
+- View Event Details: Attend Event Button and Like Counts.
+
+<p align="center">
+<img src="static/images/View Details Page Attend-Event.png" width="100%" height="100%">
+</p>
+
+- Event Details: Remove Attend event Button and Like Counts.
+
+<p align="center">
+<img src="static/images/View Details Page Delete Attend-Event.png" width="100%" height="100%">
+</p>
+
+- Event Review Functionality: Users have the ability to leave detailed reviews for events they have attended.
+
+<p align="center">
+<img src="static/images/Reviews Page-Event.png" width="100%" height="100%">
+</p>
+
+- Event Review Management: Users have the ability to edit and update their reviews, ensuring that their feedback remains accurate and current. Each review is associated with the user's name and timestamp, providing transparency and accountability.
+
+<p align="center">
+<img src="static/images/Edit & Update Review-Event.png" width="100%" height="100%">
+</p>
+
+- Event Review Management: Users are empowered to delete their reviews, granting them control over the content they contribute. This feature ensures that users can maintain the relevance and accuracy of reviews over time, enhancing the overall quality of feedback available on the platform.
+
+<p align="center">
+<img src="static/images/Delete review option-Event.png" width="100%" height="100%">
+</p>
+
+3. **Footer**
+   - The footer, present on all pages, comprises two sections: one containing social media link to GitHub, and the other acknowledging the website project portfolio by name.
+
+  <p align="center">
+  <img src="static/images/Footer-iCreate.png" width="100%" height="100%">
+  </p> 
+
+4. **Home Page - ‘Home’**
+   - A curated collection of images, organised into categories represented by flip cards corresponding to various events hosted on the platform. Each flip card displays an image relevant to the event it represents, providing users with a visual overview of the available activities. These flip cards serve as a convenient way for young users to browse through the different events and select those of interest to them.
+   - The Login / Register button will take users to the login page, if users do not have an account there is a link to the registration page.
+
+<p align="center">
+  <img src="static/images/Login Success to Events-Events.png" width="100%" height="100%">
+   </p> 
+
+5. **About Page - ‘About’**
+   - The About Page provides detailed information about the website, specifically tailored to engage young readers. Visitors can learn about the platform's purpose and its commitment to fostering creativity and learning among children.
+
+   <p align="center">
+  <img src="static/images/About Page-About.png" width="100%" height="100%">
+   </p> 
+
+   -  Additionally, the page offers a platform for individuals to connect with the iCreate hub by sharing their expertise through specialised classes and workshops. Users can fill out a form with their details, which will be promptly reviewed by the website administrators.
+
+   <p align="center">
+  <img src="static/images/Skill Workshop Form-About .png" width="100%" height="100%">
+   </p> 
+
+   <p align="center">
+  <img src="static/images/Skill Workshop Form End-About .png" width="100%" height="100%">
+   </p> 
+
+6. **Register Page - ‘Register’**
+   - The register page allows users to create a new account by providing necessary information such as username, email, password, and optional profile details.
+
+   <p align="center">
+  <img src="static/images/Register-iCreate.png" width="100%" height="100%">
+   </p> 
+
+
+7. **Login - ‘Login’**
+   - Include username and password fields, a remember me option, error handling for incorrect credentials, a login button, links for forgot password and registration, security measures like CAPTCHA or two-factor authentication.
+
+   <p align="center">
+  <img src="static/images/Login-iCreate.png" width="100%" height="100%">
+   </p> 
+
+## Design
+
+### Imagery
+- The design layout features a clean and minimalistic structure with a simple background, providing a visually uncluttered canvas. The imagery seamlessly integrates with a striking futuristic gaming design, elevating the overall visual appeal.
+
+### Typography
+- Google Fonts were used to import the Julius font into styles.css. Chosen for it's simple, unembellished, minimalistic feel that is easy to read. Special Font for 'Event' on Home Page: Lexend.
+
+
+### Future Features
+- Audio & Video books, music, educational tutorials tailored for children.
+- User Settings: Parental Permission for Safe Hub, a platform similar to Facebook but designed specifically for kids.
+- Blog Post for children by children.
+- Awards and Certificates to Print.
+- Implement a JavaScript mouseover sound feature, activating a flip card action to reveal the other side when hovering over or clicking the card at 180 degrees.
+- I'll be incorporating more flip event cards for upcoming events, making them easily accessible with a "Next" button below and a "Previous" button for scrolling through the pages.More events that will be easy to find using a next button below and previous button to scroll through the pages.
+
+
+#
+# Structure
+
+The MVP website for youth aged 6-18 is structured to be intuitive and engaging, with clear navigation and visually appealing design elements. The platform prioritises simplicity and ease of use, ensuring that young users can easily navigate, interact with content, and participate in various activities tailored to their age group. Additionally, the website emphasises safety and accessibility, providing a secure environment for youth to explore, learn, and engage with the platform's offerings. Simplicity helps young users to quickly and easily access the app and navigate within the app.
+
+The website comprises two applications:
+
+- Event: The event app oversees Create, Read, Update, and Delete operations, along with managing notifications, for all event-related content. Additionally, it incorporates review functionality for events and includes a feature to count likes, all with the aim of delivering a user-friendly experience tailored for young users while ensuring smooth interaction with the platform.
+
+- About: The "about" app provides website details and empowers professional instructors/users to showcase their skills and organise events. Its objective is to promote engagement with the iCreate hub by facilitating workshops, knowledge sharing, and collaboration to nurture personal and professional growth through specialised classes and meaningful interactions. This page features a form for users to offer their workshops and events. 
+
+# Wireframes
+All wireframes were created using [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes)
+Wireframes for each device are linked here:
+- [Desktop](assets/documents/Desktop-wireframes)
+- [Mobile](assets/documents/Mobile-wireframes)
+
+# Database schema
+Prior to initiating any model migrations to my database, I devised an entity relationship diagram to visualise the connections between the models.
+
+The entity relationship diagrams were created using [![Lucidchart](https://img.shields.io/badge/Lucidchart-orange?logo=lucidchart&logoColor=white)](https://lucid.app)
+
+<p align="center">
+<img src="static/images/iCreate-Database- Schema.png" width="900" height="100%">
+</p>
+
+## Models
+### **Event Model**
+
+<p align="center">
+<img src="static/images/Event Model-Event.png" width="900" height="100%">
+</p>
+
+### **Reviews Model**
+
+<p align="center">
+<img src="static/images/Reviews Model-Event.png" width="900" height="100%">
+</p>
+
+### **About Model**
+
+<p align="center">
+<img src="static/images/About Model-About.png" width="900" height="100%">
+</p>
+
+### **SubmitDetails Model**
+
+<p align="center">
+<img src="static/images/SubmitDetails Model-About.png" width="900" height="100%">
+</p>
+
+
+## Technologies Used
+
+### Languages Used
+- [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML)
+- [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS)
+- [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com)
+- [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org)
+
+ ## Frameworks, Libraries & Programs Used
+
+- [![Git](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com)- GitHub is a web-based platform for version control using Git, enabling collaborative software development and hosting of code repositories. GitHub connects to GitPod and Heroku. I used for secure online code storage.
+
+- [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) – Connected to GitHub, GitPod hosted the coding space, allowing the project to be built and then committed to the GitHub repository. I used for version control. (`git add`, `git commit`, `git push`)
+
+- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) - Connected to the GitHub repository, Heroku is a cloud application platform used to deploy this project so the backend language can be utilised/tested. I used for hosting the deployed back-end site.
+
+- [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) - Django is a high-level web framework for building web applications rapidly with a clean and pragmatic design. I used as the Python framework for the site.
+
+- [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) - ElephantSQL is a hosted PostgreSQL database service that can be seamlessly integrated with Django applications, providing scalable and reliable database solutions. I used as the Postgres database.
+
+- [![Gunicorn](https://img.shields.io/badge/Gunicorn-blue?logo=gunicorn&logoColor=white)](https://gunicorn.org/) - Gunicorn is a pure-Python HTTP server for WSGI applications. Followed Code Institute instructions to install.
+
+- [![Dj Database URL](https://img.shields.io/badge/Dj_Database_URL-green?logo=python&logoColor=white)](https://pypi.org/project/dj-database-url/) - This allows you to utilise the 12factor inspired DATABASE_URL environment variable to configure your Django application. Followed Code Institute instructions to install.
+
+- [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) - Bootstrap is a front-end framework for developing responsive and mobile-first websites quickly and efficiently. I utilised for modern responsiveness and pre-built components.
+
+- [![Cloudinary](https://img.shields.io/badge/Cloudinary-purple?logo=cloudinary&logoColor=white)](https://cloudinary.com)- Cloudinary is a cloud-based media management platform that offers solutions for storing, optimising, and delivering images and videos for web and mobile applications. Followed Code Institute instructions to install.
+
+- [![Summernote](https://img.shields.io/badge/Summernote-orange?logo=summernote&logoColor=white)](https://summernote.org/) - Summernote is a Django app that enables users to easily integrate a rich text editor into their web applications, enhancing event creation and description functionality. Followed Code Institute instructions to install.
+
+- [![DALL-E3](https://img.shields.io/badge/DALL--E3-yellow?logo=openai&logoColor=white)](https://openai.com/) - DALL-E3 is an advanced AI model developed by OpenAI that generates images from textual descriptions. For my images I created using text.
+
+- [![TinyPNG](https://img.shields.io/badge/TinyPNG-grey?logo=tinypng&logoColor=CE0908)](https://tinypng.com/) - TinyPNG is a website that offers image compression services to optimise image files for faster loading on webpages while maintaining visual quality. Compress the images.
+
+- [![Google Fonts](https://img.shields.io/badge/Google_Fonts-blue?logo=google-fonts&logoColor=white)](https://fonts.google.com/) - Google Fonts is a collection of free, open-source fonts that can be easily integrated into websites and other digital projects to enhance typography. Imported for fonts.
+
+- [![Font Awesome](https://img.shields.io/badge/Font_Awesome-darkblue?logo=font-awesome&logoColor=white)](https://fontawesome.com/) - Font Awesome is a library of scalable vector icons that can be easily customised and used to enhance the visual appeal of websites and applications. Imported to base.html.
+
+- [![Beautify](https://img.shields.io/badge/Beautify-green?logo=beautify&logoColor=white)](https://www.jpkc.com/tools/beautify/) - Beautify is a code formatter tool that automatically formats code to improve readability and consistency. Used in Gitpod to help color code and spot errors.
+
+- [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) - Balsamiq is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualisation of design ideas. used for my wireframes.
+
+- [![Lucidchart](https://img.shields.io/badge/Lucidchart-orange?logo=lucidchart&logoColor=white)](https://lucid.app) - Lucidchart is a web-based diagramming tool that allows users to create and collaborate on flowcharts, ERDs, and other visual representations of data and processes. Made a ERD flow chart.
+
+- [![Am I Responsive](https://img.shields.io/badge/Am_I_Responsive-blue?logoColor=white)](http://ami.responsivedesign.is/) - Am I Responsive is a web tool that allows users to quickly preview how their website appears on various devices and screen sises, helping to ensure responsiveness and compatibility across platforms. Put my heroku url to check responsivity to all devices.
+
+- [![Diffchecker](https://img.shields.io/badge/Diffchecker-grey?logo=diffchecker&logoColor=white)](https://www.diffchecker.com/text-compare/) - Diffchecker is a text comparison tool used to highlight the differences between two blocks of text, facilitating comparison and analysis. Update my code against old code for validation.
+
+- [![W3C CSS Validator](https://img.shields.io/badge/W3C_CSS_Validator-grey?logo=css3&logoColor=white)](https://jigsaw.w3.org/css-validator/) - The W3C CSS Validator is a tool used to check the validity and syntax of CSS code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C). Import my CSS for validation.
+
+- [![W3C Markup Validator](https://img.shields.io/badge/W3C_Markup_Validator-grey?logo=html5&logoColor=white)](https://validator.w3.org/#validate_by_input) - The W3C Markup Validator is a tool used to check the validity and syntax of HTML code, ensuring compliance with web standards set by the World Wide Web Consortium (W3C). Import my html for validation.
+
+- [![JSHint](https://img.shields.io/badge/JSHint-grey?logo=jshint&logoColor=yellow)](https://jshint.com/) - JSHint is a static code analysis tool used for checking JavaScript code for errors, potential problems, and stylistic inconsistencies. Import my JS code for validation.
+
+- [![Pep8ci](https://img.shields.io/badge/Pep8ci-grey?logo=heroku&logoColor=purple)](https://pep8ci.herokuapp.com/)- Pep8ci provides Python developers with a tool to check their code against the PEP 8 style guide for adherence to coding standards. Import my Python code for validation.
+
+- [![Lighthouse](https://img.shields.io/badge/Lighthouse-grey?logo=google-chrome&logoColor=red)](https://developer.chrome.com/docs/lighthouse)- an open-source tool used for auditing web page quality, including performance, accessibility, SEO, and cross-browser testing. Check for validation.
+
+- [![Code Institute](https://img.shields.io/badge/Code_Institute-grey?logo=codepen&logoColor=black)](https://codeinstitute.net/) - The events page on my site drew inspiration from the "I think therefore I blog" walkthrough project by Code Institute. Throughout the past 16 weeks, my participation in the Full Stack skills bootcamp has equipped me with the essential skills needed to develop this website.
+
+
+*Below, you'll find a comprehensive list of project requirements and their respective versions. Some installed packages were not utilised but were installed as per the instructions provided by Code Institute. This influenced my decision to document the process in the 'I think therefore I blog' walkthrough project.*
+
+
+- asgiref==3.7.2  
+- cloudinary==1.36.0  
+- crispy-bootstrap5==0.7  
+- dj-database-url==0.5.0  
+- dj3-cloudinary-storage==0.0.6  
+- Django==4.2.11  
+- django-allauth==0.57.2  
+- django-bootstrap-v5==1.0.11  
+- django-crispy-forms==2.1  
+- django-summernote==0.8.20.0  
+- gunicorn==20.1.0  
+- oauthlib==3.2.2  
+- psycopg2==2.9.9  
+- PyJWT==2.8.0  
+- python3-openid==3.2.0  
+- requests-oauthlib==1.4.0  
+- sqlparse==0.4.4  
+- whitenoise==5.3.0  
+
+
+
+# Testing 
+
+## User Story Testing
+
+## User Stories, features and bugs
+
+<table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues - tested all viewports using Google Dev Tools</th>
+  </tr>
+   <tr>
+    <td>As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.</td>
+    <td>Interactive flip cards designed for children to rotate 180°.The front side displays event images to capture their interest. Back side displays details including a 'view details' button.</td>
+    <td>The display would not flex to row.</td>
+  </tr>
+  <tr>
+    <td>As a young user, I want to explore captivating event details presented on flip cards, so that I can click on the "View Details" button for more information.</td>
+    <td>Interactive flip cards designed for children to rotate 180°. The front side displays event images to capture their interest. Back side displays details including a 'view details' button.</td>
+    <td>The brief description overflowed flip cards</td>
+   </tr>
+   <tr>
+    <td>As a logged-in User I can attend events so that I can join events easily using a simple button</td>
+    <td>The button system displays attendees..<br>Organisers know who is attending.</td>
+    <td>On event detail page attending button unresponsive</td>
+   <tr>
+    <td>As a logged-in User I can delete attend events so that I can change my mind to join events using a simple button</td>
+    <td>Event view details page with event displayed.<br>The button system displays cancelled attendees.</td>
+    <td>Event system by attendees unresponsive.<br>Organisers know who is cancelled attending.</td>
+   </tr>
+   <tr>
+    <td>As a young user aged 6-18, I want the iCreate platform's navigation to be seamless across all devices, enabling me to access it from anywhere, including smartphones and tablets.</td>
+    <td>Study my skills anywhere<br>Easy mobile accessibility</td>
+    <td>None detected.</td> 
+   </tr>
+  <tr>
+    <td>As a Organiser I can create events so that users can attend them.</td>
+    <td>Specify date, time, location, course or interest, and max. participants.<br>List of users attending.<br>Add an event picture.</td>
+    <td>None detected</td>
+    </tr>
+
+  <tr>
+    <td>As a user, I want the site to be easily navigable.</td>
+    <td>Different features of site are clearly identifiable</td>
+    <td>None detected</td>
+    
+  </tr>
+  <tr>
+    <td>As a site Admin I prioritise the inclusion of diverse and inclusive content on the website, ensuring that resources, 
+  events, and services cater to the varied needs and backgrounds of our youth population, promoting accessibility and equity.</td>
+    <td>Minililistic design<br>Simple font and layout</td>
+    <td>None detected</td>
+    
+  </tr>
+  <tr>
+    <td>As a User I can log in/out off my account if I wish so that I can connect or disconnect from the website.</td>
+    <td>Success notifications to alert user</td>
+    <td>None detected</td>
+    
+  </tr>
+  <tr>
+    <td>As a user, I want the site to be visually appealing.</td>
+    <td>Blue: Calming, reduces stress, promotes relaxation, trust, stability for kids <br>Children enjoy flip cards because they offer interactive engagement and surprise through flipping actions, along with colorful and visually appealing designs.
+    </td>
+    <td>None detected</td>
+</tr>
+  </table>
+
+<br>
+
+
+### User Stories and Features (to be implemented next Sprint) 
+
+
+  <table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues</th>
+  </tr>
+
+
+  <tr>
+    <td>As a user I want to able to search filter events so that I can attend events of my interest.</td>
+    <td>Filter by category, words or interests.</td>
+    <td>N/A</td>
+  </tr>
+  
+  <tr>
+    <td>As a user I can get notified of upcoming events so that I am less likely to miss or forget the event.</td>
+    <td>Get notifications from upcoming events.</td>
+    <td>N/A</td>
+  </tr>
+
+  <tr>
+    <td>Implement a JavaScript mouseover sound feature, activating a flip card action to reveal the other side when hovering over or clicking the card at 180 degrees.</td>
+    <td>Add to the fun experience for children</td>
+    <td>N/A</td>
+  </tr>
+
+  <tr>
+    <td>Award certificates and badges upon completing tasks and mastering skills on the platform so that I am motivated to continue learning and engaging with the platform's activities</td>
+    <td>Motivate to continue learning and engaging with the platform's activities</td>
+    <td>N/A</td>
+  </tr>
+  
+
+  </table>
+
+### Won't haves
+
+  <table>
+  <tr>
+    <th>User Story</th>
+    <th>Features</th>
+    <th>Bugs / Issues</th>
+  </tr>
+  <tr>
+    <td>As a user I want to be able to friend other users</td>
+    <td>Add friend option.</td>
+    <td>N/A</td>
+  </tr>
+
+
+## Fixed Bugs / Issues
+<br>
+<table>
+  <tr>
+    <th>Bug/Issue</th>
+    <th>Image</th>
+    <th>Resolution</th>
+  </tr>
+  <tr>
+  <td>Back side flip card overflows card</td>
+    <td><img src="static/images/ISSUE overflow.png" alt="Image showing "></td>
+    
+  <td>Reduced text in admin</td>
+  </tr>
+  
+  </table>
+
+## Unfixed Bugs / Issues
+<table>
+  <tr>
+    <th>Bug/Issue</th>
+    <th>Image</th>
+    <th>Resolution</th>
+  </tr>
+  <tr>
+  <td>Ipad display is not centered on the screen using bootstrap</td>
+    <td><img src="static/images/ISSUE Responsive devices - Testing.png" alt="Image response testing"></td>
+    
+  <td>Due to time constraints, I could not address the slight misalignment of the Bootstrap responsiveness for iPad. I plan to rectify this in the next sprint.</td>
+  </tr>
+</table>
+
+
+**EPIC: Superuser / Admin**
+- As a site Admin I can create, edit and delete events and comments so that I can manage the site content
+- As a site Admin I can access the admin panel so that I can manage events and comments
+- As a site Admin I can log out of the admin panel so that I can disconnect from the website
+
+This was tested by accessing the Django Admin Panel. By creating a Superuser I can access the Django Admin Panel where the administrator can perform all the CRUD functionalities.
+
+**EPIC: User Interaction**
+1. As a logged-in User I can write reviews on events so that I can leave my feedback
+
+<p align="center">
+<img src="static/images/Create review-Event.png" width="800" height="300">
+</p>
+
+2. As a logged-in User I like
+<p align="center">
+<img src="" width="800" height="300">
+</p>
+
+3. As a User I 
+<p align="center">
+<img src="" width="800" height="300">
+</p>
+
+4. As a User I 
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+
+**EPIC: User Events**
+1. As a logged-in 
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+2. As a User I 
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+3. As a User I  
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+4. As a logged-in User I 
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+
+**EPIC: Login/Register**
+1. As a User
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+
+2. As a User I 
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+3. As a User my status is
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+<p align="center">
+<img src="" width="8000" height="300%">
+</p>
+
+**EPIC: Navigation**
+1. As a User 
+<p align="center">
+<img src="" width="1000" height="100%">
+</p>
+
+2. As a User 
+<p align="center">
+<img src="" width="800" height="300%">
+</p>
+
+
+### Validator Testing
+
+# Testing 
+
+Testing and results can be found [here](TESTING.md).
+
+## Bugs and Issues
+- 
+- 
+- 
+- 
+- 
+
+# Deployment
+
+# Credits
+
+- [ChatGPT] (https://chat.openai.com) - Providing guidance whenever I encountered code I did not grasp.
+- [DALL-E 3](https://openai.com/dall-e-3) - Converted all my textual ideas into visual images.
+- [W3Schools](https://www.w3schools.com/howto/howto_css_flip_card.asp) - W3Schools provided me guidance on creating flip cards, which I incorporated into the website design.
+- [CodingTube](https://www.youtube.com/watch?v=TMWkKPlUUJ4) - CodingTube gave me an opportunity to practice JavaScript concepts toggle flip cards and in this memory game tutorial.
+
+## Media
+- The icon in the footer were taken from Font Awesome.
+- The fonts used were imported from Google Fonts.
+- My images including favicon were all created by DALL-E 3.
+- [CSS Gradient](https://cssgradient.io/)
+
+## Acknowledgments
+- 
+- 
+- 
