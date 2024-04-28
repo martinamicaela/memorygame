@@ -7,7 +7,7 @@ let secondResult=null;
 let movements=0;
 let rightAnswers=0;
 let timer=false;
-let timerTotal=30;
+let timerTotal=5;
 let regressiveTime=null;
 
 
@@ -28,11 +28,19 @@ function countTime(){
     timerTotal--;
     showTime.innerHTML=`Time: ${timerTotal} seconds`
     if(timerTotal==0){
-      clearInterval(regressiveTime);
-      
+      clearInterval(regressiveTime); 
+      blocktheCards();
     }
   }, 1000);
 };
+
+function blocktheCards(){
+  for (let i=0; i<=15; i++){
+    let blockedCard= document.getElementById(i);
+    blockedCard.innerHTML=numbers[i];
+    blockedCard.disabled=true;
+  }
+}
 
 //main function
 function uncover(id){
@@ -69,6 +77,7 @@ function uncover(id){
         showRightAnswers.innerHTML=`Right Answers:${rightAnswers}`;
         if (rightAnswers==8){
           showRightAnswers.innerHTML=`Right Answers:${rightAnswers}🥳`;
+
           showMovements.innerHTML=`Movimientos:${movements}💃`;
         }
         }else{
