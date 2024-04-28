@@ -522,6 +522,8 @@ https://stackoverflow.com/questions/5294842/refresh-a-page-using-javascript-or-h
 - [CSS Gradient](https://cssgradient.io/)
 - [emojicopy](https://emojicopy.com/)
 
+https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j
+
 ## Acknowledgments
 - 
 - 
