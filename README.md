@@ -694,7 +694,7 @@ Testing and results can be found [here](TESTING.md).
 - The fonts used were imported from Google Fonts.
 - My images including favicon were all created by DALL-E 3.
 - [CSS Gradient](https://cssgradient.io/)
-
+-https://emojicopy.com/
 ## Acknowledgments
 - 
 - 

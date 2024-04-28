@@ -7,7 +7,8 @@ let secondResult=null;
 let movements=0;
 let rightAnswers=0;
 let timer=false;
-let timerTotal=5;
+let timerTotal=60;
+let InitialTime=60;
 let regressiveTime=null;
 
 
@@ -76,8 +77,9 @@ function uncover(id){
         rightAnswers++;
         showRightAnswers.innerHTML=`Right Answers:${rightAnswers}`;
         if (rightAnswers==8){
+          clearInterval(regressiveTime);
           showRightAnswers.innerHTML=`Right Answers:${rightAnswers}🥳`;
-
+          showTime.innerHTML=`Great 🚀 it just took ${InitialTime - timerTotal} seconds`
           showMovements.innerHTML=`Movimientos:${movements}💃`;
         }
         }else{
@@ -88,7 +90,7 @@ function uncover(id){
         card1.disabled= false;
         card2.disabled= false;
         uncoveredCards= 0; 
-      }, 1500);
+      }, 1000);
     }
   }
 }
