@@ -16,6 +16,8 @@ let regressiveTime=null;
 let showMovements=document.getElementById('movements');
 let showRightAnswers=document.getElementById('right-answers');
 let showTime=document.getElementById('timeLeft');
+let playagainb=document.getElementById('playb');
+
 
 
 //random numbers generation 
@@ -43,11 +45,36 @@ function blocktheCards(){
   }
 }
 
+function playAgain(playagainb){
+  for (let i=0; i<=15; i++){
+    let playagainCard= document.getElementById(i);
+    playagainCard.innerHTML='';
+    playagainCard.disabled=false;
+    uncoveredCards= 0; 
+    movements=0;
+    rightAnswers=0;
+    //timerTotal=0;//
+    clearInterval(regressiveTime);
+    timerTotal=60;
+    timer=false;
+    showMovements.innerHTML=`Movimientos:${movements}`;
+    showRightAnswers.innerHTML=`Right Answers:${rightAnswers}`;
+    showTime.innerHTML=`Time: ${timerTotal} seconds`;
+
+  }
+     
+}
+
+function newGame(){
+  window.location.reload();
+}
+
 //main function
 function uncover(id){
   if(timer==false){
     countTime();
     timer=true;
+
   }
     uncoveredCards++;
     console.log(uncoveredCards)
