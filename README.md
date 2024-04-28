@@ -1,17 +1,24 @@
-<h1 align="center">iCreate</h1>                                      
+<h1 align="center">Memory Game</h1>                                      
 
 
 <p align="center">
-<img src="static/images/Responsive devices - Testing.png" width="600" height="100%">
+<img src="assets/images/memorygameintitial.png" width="600" height="100%">
 </p>
 
 
 
 
-This project utilises a full-stack framework, incorporating Django, Python, JavaScript, HTML, and CSS. My objective is to develop a responsive website that enables users to perform CRUD operations, as well as post, comment, and interact with events by liking or unliking them. 
+This project is an exercise for practising and improving javascript and css skills, with personal additions as the "Play again" and "New game" buttons. 
+
+During this project  I have learnt more about the structure of arrow functions and special functions such as: 
+
+- setInterval(() => {})
+- setTimeout(() => {}, 1000)
+
+Besides I have found very useful the method window.location.reload() to reload the page.
 
 
-**[Visit my website](https://amanda-ci-dev-full-stack-cap-a6484667fa4d.herokuapp.com/)**
+**[Visit my website](https://martinamicaela.github.io/memorygame/)**
 
 ### SUPERUSER CREDENTIALS:  
 - username - heroku_admin 
@@ -181,139 +188,7 @@ By following this method, I applied MoSCoW prioritisation and labels to my user 
 <img src="static/images/iCreateNavbar.png" width="100%" height="100%">
 </p>
 
-2. **Landing Page - Event Flip Cards**
-   - The landing area showcases interactive flip cards designed for children to rotate 180°. The front side displays event images to capture their interest.
-  
-   <p align="center">
-<img src="static/images/Feature Flip Cards Front-Event.png" width="100%" height="100%">
-</p>
 
-- Upon flipping, they unveil event details on the reverse side, succinctly showcasing the event's specific information such as time, date, location, and a brief description. This effectively communicates the website's purpose and the specific event offerings. Additionally, each card includes a 'View Details' button for further inquiry.
-
-<p align="center">
-<img src="static/images/Feature Flip Cards Back-Event.png" width="100%" height="100%">
-</p>
-
-- View Event Details: Attend Event Button and Like Counts.
-
-<p align="center">
-<img src="static/images/View Details Page Attend-Event.png" width="100%" height="100%">
-</p>
-
-- Event Details: Remove Attend event Button and Like Counts.
-
-<p align="center">
-<img src="static/images/View Details Page Delete Attend-Event.png" width="100%" height="100%">
-</p>
-
-- Event Review Functionality: Users have the ability to leave detailed reviews for events they have attended.
-
-<p align="center">
-<img src="static/images/Reviews Page-Event.png" width="100%" height="100%">
-</p>
-
-- Event Review Management: Users have the ability to edit and update their reviews, ensuring that their feedback remains accurate and current. Each review is associated with the user's name and timestamp, providing transparency and accountability.
-
-<p align="center">
-<img src="static/images/Edit & Update Review-Event.png" width="100%" height="100%">
-</p>
-
-- Event Review Management: Users are empowered to delete their reviews, granting them control over the content they contribute. This feature ensures that users can maintain the relevance and accuracy of reviews over time, enhancing the overall quality of feedback available on the platform.
-
-<p align="center">
-<img src="static/images/Delete review option-Event.png" width="100%" height="100%">
-</p>
-
-3. **Footer**
-   - The footer, present on all pages, comprises two sections: one containing social media link to GitHub, and the other acknowledging the website project portfolio by name.
-
-  <p align="center">
-  <img src="static/images/Footer-iCreate.png" width="100%" height="100%">
-  </p> 
-
-4. **Home Page - ‘Home’**
-   - A curated collection of images, organised into categories represented by flip cards corresponding to various events hosted on the platform. Each flip card displays an image relevant to the event it represents, providing users with a visual overview of the available activities. These flip cards serve as a convenient way for young users to browse through the different events and select those of interest to them.
-   - The Login / Register button will take users to the login page, if users do not have an account there is a link to the registration page.
-
-<p align="center">
-  <img src="static/images/Login Success to Events-Events.png" width="100%" height="100%">
-   </p> 
-
-5. **About Page - ‘About’**
-   - The About Page provides detailed information about the website, specifically tailored to engage young readers. Visitors can learn about the platform's purpose and its commitment to fostering creativity and learning among children.
-
-   <p align="center">
-  <img src="static/images/About Page-About.png" width="100%" height="100%">
-   </p> 
-
-   -  Additionally, the page offers a platform for individuals to connect with the iCreate hub by sharing their expertise through specialised classes and workshops. Users can fill out a form with their details, which will be promptly reviewed by the website administrators.
-
-   <p align="center">
-  <img src="static/images/Skill Workshop Form-About .png" width="100%" height="100%">
-   </p> 
-
-   <p align="center">
-  <img src="static/images/Skill Workshop Form End-About .png" width="100%" height="100%">
-   </p> 
-
-6. **Register Page - ‘Register’**
-   - The register page allows users to create a new account by providing necessary information such as username, email, password, and optional profile details.
-
-   <p align="center">
-  <img src="static/images/Register-iCreate.png" width="100%" height="100%">
-   </p> 
-
-
-7. **Login - ‘Login’**
-   - Include username and password fields, a remember me option, error handling for incorrect credentials, a login button, links for forgot password and registration, security measures like CAPTCHA or two-factor authentication.
-
-   <p align="center">
-  <img src="static/images/Login-iCreate.png" width="100%" height="100%">
-   </p> 
-
-## Design
-
-### Imagery
-- The design layout features a clean and minimalistic structure with a simple background, providing a visually uncluttered canvas. The imagery seamlessly integrates with a striking futuristic gaming design, elevating the overall visual appeal.
-
-### Typography
-- Google Fonts were used to import the Julius font into styles.css. Chosen for it's simple, unembellished, minimalistic feel that is easy to read. Special Font for 'Event' on Home Page: Lexend.
-
-
-### Future Features
-- Audio & Video books, music, educational tutorials tailored for children.
-- User Settings: Parental Permission for Safe Hub, a platform similar to Facebook but designed specifically for kids.
-- Blog Post for children by children.
-- Awards and Certificates to Print.
-- Implement a JavaScript mouseover sound feature, activating a flip card action to reveal the other side when hovering over or clicking the card at 180 degrees.
-- I'll be incorporating more flip event cards for upcoming events, making them easily accessible with a "Next" button below and a "Previous" button for scrolling through the pages.More events that will be easy to find using a next button below and previous button to scroll through the pages.
-
-
-#
-# Structure
-
-The MVP website for youth aged 6-18 is structured to be intuitive and engaging, with clear navigation and visually appealing design elements. The platform prioritises simplicity and ease of use, ensuring that young users can easily navigate, interact with content, and participate in various activities tailored to their age group. Additionally, the website emphasises safety and accessibility, providing a secure environment for youth to explore, learn, and engage with the platform's offerings. Simplicity helps young users to quickly and easily access the app and navigate within the app.
-
-The website comprises two applications:
-
-- Event: The event app oversees Create, Read, Update, and Delete operations, along with managing notifications, for all event-related content. Additionally, it incorporates review functionality for events and includes a feature to count likes, all with the aim of delivering a user-friendly experience tailored for young users while ensuring smooth interaction with the platform.
-
-- About: The "about" app provides website details and empowers professional instructors/users to showcase their skills and organise events. Its objective is to promote engagement with the iCreate hub by facilitating workshops, knowledge sharing, and collaboration to nurture personal and professional growth through specialised classes and meaningful interactions. This page features a form for users to offer their workshops and events. 
-
-# Wireframes
-All wireframes were created using [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes)
-Wireframes for each device are linked here:
-- [Desktop](assets/documents/Desktop-wireframes)
-- [Mobile](assets/documents/Mobile-wireframes)
-
-# Database schema
-Prior to initiating any model migrations to my database, I devised an entity relationship diagram to visualise the connections between the models.
-
-The entity relationship diagrams were created using [![Lucidchart](https://img.shields.io/badge/Lucidchart-orange?logo=lucidchart&logoColor=white)](https://lucid.app)
-
-<p align="center">
-<img src="static/images/iCreate-Database- Schema.png" width="900" height="100%">
-</p>
 
 ## Models
 ### **Event Model**
@@ -347,7 +222,7 @@ The entity relationship diagrams were created using [![Lucidchart](https://img.s
 - [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML)
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS)
 - [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com)
-- [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org)
+
 
  ## Frameworks, Libraries & Programs Used
 
@@ -355,33 +230,9 @@ The entity relationship diagrams were created using [![Lucidchart](https://img.s
 
 - [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) – Connected to GitHub, GitPod hosted the coding space, allowing the project to be built and then committed to the GitHub repository. I used for version control. (`git add`, `git commit`, `git push`)
 
-- [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) - Connected to the GitHub repository, Heroku is a cloud application platform used to deploy this project so the backend language can be utilised/tested. I used for hosting the deployed back-end site.
-
-- [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) - Django is a high-level web framework for building web applications rapidly with a clean and pragmatic design. I used as the Python framework for the site.
-
-- [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) - ElephantSQL is a hosted PostgreSQL database service that can be seamlessly integrated with Django applications, providing scalable and reliable database solutions. I used as the Postgres database.
-
-- [![Gunicorn](https://img.shields.io/badge/Gunicorn-blue?logo=gunicorn&logoColor=white)](https://gunicorn.org/) - Gunicorn is a pure-Python HTTP server for WSGI applications. Followed Code Institute instructions to install.
-
-- [![Dj Database URL](https://img.shields.io/badge/Dj_Database_URL-green?logo=python&logoColor=white)](https://pypi.org/project/dj-database-url/) - This allows you to utilise the 12factor inspired DATABASE_URL environment variable to configure your Django application. Followed Code Institute instructions to install.
-
-- [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) - Bootstrap is a front-end framework for developing responsive and mobile-first websites quickly and efficiently. I utilised for modern responsiveness and pre-built components.
-
-- [![Cloudinary](https://img.shields.io/badge/Cloudinary-purple?logo=cloudinary&logoColor=white)](https://cloudinary.com)- Cloudinary is a cloud-based media management platform that offers solutions for storing, optimising, and delivering images and videos for web and mobile applications. Followed Code Institute instructions to install.
-
-- [![Summernote](https://img.shields.io/badge/Summernote-orange?logo=summernote&logoColor=white)](https://summernote.org/) - Summernote is a Django app that enables users to easily integrate a rich text editor into their web applications, enhancing event creation and description functionality. Followed Code Institute instructions to install.
-
-- [![DALL-E3](https://img.shields.io/badge/DALL--E3-yellow?logo=openai&logoColor=white)](https://openai.com/) - DALL-E3 is an advanced AI model developed by OpenAI that generates images from textual descriptions. For my images I created using text.
-
-- [![TinyPNG](https://img.shields.io/badge/TinyPNG-grey?logo=tinypng&logoColor=CE0908)](https://tinypng.com/) - TinyPNG is a website that offers image compression services to optimise image files for faster loading on webpages while maintaining visual quality. Compress the images.
-
-- [![Google Fonts](https://img.shields.io/badge/Google_Fonts-blue?logo=google-fonts&logoColor=white)](https://fonts.google.com/) - Google Fonts is a collection of free, open-source fonts that can be easily integrated into websites and other digital projects to enhance typography. Imported for fonts.
-
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-darkblue?logo=font-awesome&logoColor=white)](https://fontawesome.com/) - Font Awesome is a library of scalable vector icons that can be easily customised and used to enhance the visual appeal of websites and applications. Imported to base.html.
 
 - [![Beautify](https://img.shields.io/badge/Beautify-green?logo=beautify&logoColor=white)](https://www.jpkc.com/tools/beautify/) - Beautify is a code formatter tool that automatically formats code to improve readability and consistency. Used in Gitpod to help color code and spot errors.
-
-- [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) - Balsamiq is a wireframing tool used for creating low-fidelity mockups of user interfaces, allowing for quick and easy visualisation of design ideas. used for my wireframes.
 
 - [![Lucidchart](https://img.shields.io/badge/Lucidchart-orange?logo=lucidchart&logoColor=white)](https://lucid.app) - Lucidchart is a web-based diagramming tool that allows users to create and collaborate on flowcharts, ERDs, and other visual representations of data and processes. Made a ERD flow chart.
 
@@ -395,34 +246,7 @@ The entity relationship diagrams were created using [![Lucidchart](https://img.s
 
 - [![JSHint](https://img.shields.io/badge/JSHint-grey?logo=jshint&logoColor=yellow)](https://jshint.com/) - JSHint is a static code analysis tool used for checking JavaScript code for errors, potential problems, and stylistic inconsistencies. Import my JS code for validation.
 
-- [![Pep8ci](https://img.shields.io/badge/Pep8ci-grey?logo=heroku&logoColor=purple)](https://pep8ci.herokuapp.com/)- Pep8ci provides Python developers with a tool to check their code against the PEP 8 style guide for adherence to coding standards. Import my Python code for validation.
-
 - [![Lighthouse](https://img.shields.io/badge/Lighthouse-grey?logo=google-chrome&logoColor=red)](https://developer.chrome.com/docs/lighthouse)- an open-source tool used for auditing web page quality, including performance, accessibility, SEO, and cross-browser testing. Check for validation.
-
-- [![Code Institute](https://img.shields.io/badge/Code_Institute-grey?logo=codepen&logoColor=black)](https://codeinstitute.net/) - The events page on my site drew inspiration from the "I think therefore I blog" walkthrough project by Code Institute. Throughout the past 16 weeks, my participation in the Full Stack skills bootcamp has equipped me with the essential skills needed to develop this website.
-
-
-*Below, you'll find a comprehensive list of project requirements and their respective versions. Some installed packages were not utilised but were installed as per the instructions provided by Code Institute. This influenced my decision to document the process in the 'I think therefore I blog' walkthrough project.*
-
-
-- asgiref==3.7.2  
-- cloudinary==1.36.0  
-- crispy-bootstrap5==0.7  
-- dj-database-url==0.5.0  
-- dj3-cloudinary-storage==0.0.6  
-- Django==4.2.11  
-- django-allauth==0.57.2  
-- django-bootstrap-v5==1.0.11  
-- django-crispy-forms==2.1  
-- django-summernote==0.8.20.0  
-- gunicorn==20.1.0  
-- oauthlib==3.2.2  
-- psycopg2==2.9.9  
-- PyJWT==2.8.0  
-- python3-openid==3.2.0  
-- requests-oauthlib==1.4.0  
-- sqlparse==0.4.4  
-- whitenoise==5.3.0  
 
 
 
@@ -689,12 +513,15 @@ Testing and results can be found [here](TESTING.md).
 - [W3Schools](https://www.w3schools.com/howto/howto_css_flip_card.asp) - W3Schools provided me guidance on creating flip cards, which I incorporated into the website design.
 - [CodingTube](https://www.youtube.com/watch?v=TMWkKPlUUJ4) - CodingTube gave me an opportunity to practice JavaScript concepts toggle flip cards and in this memory game tutorial.
 
+https://stackoverflow.com/questions/5294842/refresh-a-page-using-javascript-or-html
+
 ## Media
 - The icon in the footer were taken from Font Awesome.
 - The fonts used were imported from Google Fonts.
 - My images including favicon were all created by DALL-E 3.
 - [CSS Gradient](https://cssgradient.io/)
--https://emojicopy.com/
+- [emojicopy](https://emojicopy.com/)
+
 ## Acknowledgments
 - 
 - 
