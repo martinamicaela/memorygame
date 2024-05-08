@@ -32,15 +32,6 @@ Besides I have found very useful the method window.location.reload() to reload t
 
 2. [Scope](#scope)
     - [Features](#features)
-    - [Future Features](#future-features)
-
-3. [Structure](#structure)
-
-4. [Wireframes](#wireframes)
-
-5. [Database schema](#database-schema)
-
-6. [Surface](#surface)
 
 7. [Technologies Used](#technologies-used)
 
@@ -49,6 +40,7 @@ Besides I have found very useful the method window.location.reload() to reload t
 9. [Deployment](#deployment)
 
 10. [Credits](#credits)
+10. [Acknowledgments](#acknowledgments)
 
 #
 # UX
@@ -218,90 +210,6 @@ By following this method, I applied MoSCoW prioritisation and labels to my user 
    </tr>
 </table>
 
-
-**EPIC: Superuser / Admin**
-- As a site Admin I can create, edit and delete events and comments so that I can manage the site content
-- As a site Admin I can access the admin panel so that I can manage events and comments
-- As a site Admin I can log out of the admin panel so that I can disconnect from the website
-
-This was tested by accessing the Django Admin Panel. By creating a Superuser I can access the Django Admin Panel where the administrator can perform all the CRUD functionalities.
-
-**EPIC: User Interaction**
-1. As a logged-in User I can write reviews on events so that I can leave my feedback
-
-<p align="center">
-<img src="static/images/Create review-Event.png" width="800" height="300">
-</p>
-
-2. As a logged-in User I like
-<p align="center">
-<img src="" width="800" height="300">
-</p>
-
-3. As a User I 
-<p align="center">
-<img src="" width="800" height="300">
-</p>
-
-4. As a User I 
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-
-**EPIC: User Events**
-1. As a logged-in 
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-2. As a User I 
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-3. As a User I  
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-4. As a logged-in User I 
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-
-**EPIC: Login/Register**
-1. As a User
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-
-2. As a User I 
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-3. As a User my status is
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-<p align="center">
-<img src="" width="8000" height="300%">
-</p>
-
-**EPIC: Navigation**
-1. As a User 
-<p align="center">
-<img src="" width="1000" height="100%">
-</p>
-
-2. As a User 
-<p align="center">
-<img src="" width="800" height="300%">
-</p>
-
-
 ### Validator Testing
 
 # Testing 
@@ -317,6 +225,8 @@ Testing and results can be found [here](TESTING.md).
 
 # Deployment
 
+**[Visit my website](https://martinamicaela.github.io/memorygame/)**
+
 # Credits
 
 - [ChatGPT] (https://chat.openai.com) - Providing guidance whenever I encountered code I did not grasp.
@@ -324,7 +234,9 @@ Testing and results can be found [here](TESTING.md).
 - [W3Schools](https://www.w3schools.com/howto/howto_css_flip_card.asp) - W3Schools provided me guidance on creating flip cards, which I incorporated into the website design.
 - [CodingTube](https://www.youtube.com/watch?v=TMWkKPlUUJ4) - CodingTube gave me an opportunity to practice JavaScript concepts toggle flip cards and in this memory game tutorial.
 
-https://stackoverflow.com/questions/5294842/refresh-a-page-using-javascript-or-html
+- https://stackoverflow.com/questions/5294842/refresh-a-page-using-javascript-or-html
+
+- https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j
 
 ## Media
 - The icon in the footer were taken from Font Awesome.
@@ -333,7 +245,7 @@ https://stackoverflow.com/questions/5294842/refresh-a-page-using-javascript-or-h
 - [CSS Gradient](https://cssgradient.io/)
 - [emojicopy](https://emojicopy.com/)
 
-https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j
+
 
 ## Acknowledgments
 - 
